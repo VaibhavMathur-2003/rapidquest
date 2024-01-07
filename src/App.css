@@ -1,38 +1,156 @@
 .App {
+  display: flex;
+  justify-content: space-between;
+}
+h2,
+h5,
+h4,
+h3 {
+  margin: 15px;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+label{
+  margin-right: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+p {
+  margin: 0;
+  color: grey;
+}
+.sidebar {
+  display: flex;
+  height: 100vh;
+  background-color: lavender;
+}
+.income {
+  padding: 30px 40px;
+  flex: 1;
+  justify-content: center;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 85px;
+  background-color: lavenderblush;
+  border-radius: 30px;
+}
+.incomecards {
+  display: flex;
+  padding:20px 150px;
+   padding-left:0;
+   justify-content: space-around;
+}
+
+.profilebutton, .strategybutton {
+  background-color: #4433ff;
+  color: white;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  margin: 30px 0px;
+}
+.strategy{
+  display: flex; 
+  flex-direction: column; 
+  padding:30px 40px; 
+  background-color:lavenderblush;
+  border-radius: 35px;
+}
+.docs{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.housing-advance-ad {
+  /* Add your desired styling here */
+  text-align: center; /* Example: Center the content */
+  padding: 20px; /* Example: Add some padding */
+  background-color: #f5f5f5; /* Example: Set a background color */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.learn-more-button {
+  /* Style the button as needed */
+  background-color: blue; /* Example: Set a blue background */
+  color: white; /* Example: Set white text color */
+  border: none; /* Example: Remove default border */
+  padding: 10px 20px; /* Example: Add some padding */
+  border-radius: 5px; /* Example: Add rounded corners */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.compare{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-top: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.circle{
+  display: flex;
+   width: 60%
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 800px) {
+  .App {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  label{
+    margin-right: 20px;
+
+  }
+  .sidebar {
+    display: none;
+  }
+  .income {
+    padding: 30px;
+  }
+  .incomecards {
+    flex-direction: column;
+    padding: 0;
+  }
+  .profile {
+    padding: 70px;
+  }
+  .profilecards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .profilebutton, .strategybutton{
+    width: 100%;
+   
+  }
+  .strategybutton{
+    border-radius: 0px 0px 10px  10px;
+    margin-bottom: 0;
+    padding: 20px 0px;
+  }
+  .strategy{
+    padding: 0;
+    
+  }
+  .docs{
+    display: none;
+  }
+  .retire{
+    padding: 30px;
+    padding-bottom: 0px;
+  }
+  .compare{
+    flex-direction: column;
+    padding: 20px;
+    font-size: 1rem;
+    margin-top: 0px;
+  }
+  .circle{
+    width: 100%;
+    margin-top: 40px;
+  }
+  h6 {
+    margin-top: 20px;
+    margin-left: 10px;
   }
 }
