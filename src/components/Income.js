@@ -7,7 +7,9 @@ const Income = () => {
   return (
     <div className="income">
       <div>
-        <h5 style={{ marginBottom: "0", color: "#4433FF" }}>Retirement Income</h5>
+        <h5 style={{ marginBottom: "0", color: "#4433FF" }}>
+          Retirement Income
+        </h5>
         <h2 style={{ marginTop: "0" }}>Starting Year 2056</h2>
       </div>
       <div className="incomecards" style={{ display: "flex" }}>
@@ -53,25 +55,31 @@ const Income = () => {
         >
           <div className="drop">
             <label for="cars">Age:</label>
-            <select style={{border:'none'}} id="cars" name="cars">
-              <option  value="volvo">Under 30</option>
+            <select style={{ border: "none" }} id="cars" name="cars">
+              <option style={{ border: "none" }} value="volvo">
+                Under 30
+              </option>
             </select>
           </div>
           <div className="drop">
             <label for="cars">Salary:</label>
-            <select style={{border:'none'}} id="cars" name="cars">
-              <option value="volvo">K20 - K30</option>
+            <select style={{ border: "none" }} id="cars" name="cars">
+              <option style={{ border: "none" }} value="volvo">
+                K20 - K30
+              </option>
             </select>
           </div>
           <div className="drop">
             <label for="cars">Gender:</label>
-            <select style={{border:'none'}} id="cars" name="cars">
-              <option value="volvo">Male</option>
+            <select style={{ border: "none" }} id="cars" name="cars">
+              <option style={{ border: "none" }} value="volvo">
+                Male
+              </option>
             </select>
           </div>
         </div>
         <div className="circle">
-          <div style={{margin:'0px 20px'}}>
+          <div style={{ margin: "0px 20px" }}>
             <CircularProgressbar
               styles={buildStyles({
                 pathColor: `#3EB489`,
@@ -82,7 +90,7 @@ const Income = () => {
               text={`78%`}
             />
           </div>
-          <div style={{margin:'0px 20px'}}>
+          <div style={{ margin: "0px 20px" }}>
             <CircularProgressbar
               styles={buildStyles({
                 pathColor: `#3EB489`,
@@ -93,7 +101,7 @@ const Income = () => {
               text={`95%`}
             />
           </div>
-          <div style={{margin:'0px 20px'}}>
+          <div style={{ margin: "0px 20px" }}>
             <CircularProgressbar
               styles={buildStyles({
                 pathColor: `#3EB489`,
