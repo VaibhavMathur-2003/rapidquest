@@ -149,6 +149,9 @@ p {
     width: 100%;
     margin-top: 40px;
   }
+  .drop{
+    margin: 12px;
+  }
   h6 {
     margin-top: 20px;
     margin-left: 10px;

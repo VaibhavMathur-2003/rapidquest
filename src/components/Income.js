@@ -51,19 +51,19 @@ const Income = () => {
             justifyContent: "space-between",
           }}
         >
-          <div>
+          <div className="drop">
             <label for="cars">Age:</label>
             <select style={{border:'none'}} id="cars" name="cars">
               <option  value="volvo">Under 30</option>
             </select>
           </div>
-          <div>
+          <div className="drop">
             <label for="cars">Salary:</label>
             <select style={{border:'none'}} id="cars" name="cars">
               <option value="volvo">K20 - K30</option>
             </select>
           </div>
-          <div>
+          <div className="drop">
             <label for="cars">Gender:</label>
             <select style={{border:'none'}} id="cars" name="cars">
               <option value="volvo">Male</option>
